@@ -1,0 +1,5 @@
+xm_robot:
+  mobile_base_controller:
+    type: "base_simple_controller/BaseSimpleController"
+  
+

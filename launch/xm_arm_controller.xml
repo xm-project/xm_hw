@@ -1,0 +1,8 @@
+<launch>
+  <rosparam file="$(find xm_hw)/config/arm_controller.yaml" command="load"/>
+  <rosparam file="$(find xm_hw)/config/joint_state_controller.yaml" command="load"/>
+
+  <node name="arm_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  ns="/xm_robot" args="xm_arm_controller"/>
+
+  <node name="state_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  ns="/xm_robot" args="joint_state_controller"/>
+</launch>

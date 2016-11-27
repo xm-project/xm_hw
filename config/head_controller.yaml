@@ -1,0 +1,3 @@
+xm_robot: 
+   simple_head_controller:
+      type: "xm_simple_head_controller/XmSimpleHeadController"
